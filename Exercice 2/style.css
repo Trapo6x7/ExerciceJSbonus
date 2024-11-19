@@ -2,12 +2,35 @@
     width: 200px;
     height: 200px;
     background-color: white;
-    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000; /* Ajout d'une bordure pour la visibilité */
 }
+
+.flex{
+    display: flex;
+}
+
+.none{
+    display: none;
+}
+
 .box-text {
     font-size: 16px;
     color: black;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: #ff009d; /* Bleu primaire */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
