@@ -1,6 +1,6 @@
 const rightButton = document.querySelector("#right-button");
 const leftButton = document.querySelector("#left-button");
-const img = document.querySelector("#biche")
+const img = document.querySelector("#biche");
 const biches = [
   "./images/biche1.jpg",
   "./images/biche2.jpg",
@@ -18,7 +18,7 @@ function handleRightImageMove() {
   } else {
     count += 1;
   }
- img.src = biches[count]
+  img.src = biches[count];
 }
 
 function handleLeftImageMove() {
@@ -28,5 +28,5 @@ function handleLeftImageMove() {
   } else {
     count -= 1;
   }
-  img.src = biches[count]
+  img.src = biches[count];
 }
