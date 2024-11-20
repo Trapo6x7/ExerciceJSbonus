@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    #6a11cb,
+    #2575fc
+  ); /* Dégradé bleu/violet */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 20px;
+}
+
+.button::after {
+  content: "→"; /* Flèche vers la droite */
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.button2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    #6a11cb,
+    #2575fc
+  ); /* Dégradé bleu/violet */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 20px;
+}
+
+.button2::after {
+  content: "←"; /* Flèche vers la droite */
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.imagecarroussel {
+  width: 500px;
+  border-radius: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
