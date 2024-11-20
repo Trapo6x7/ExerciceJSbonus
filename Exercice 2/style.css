@@ -34,3 +34,11 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.bgwhite{
+    background-color: white;
+}
+
+.bggrey{
+    background-color: grey;
+}
