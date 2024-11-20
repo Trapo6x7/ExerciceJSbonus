@@ -1,35 +1,37 @@
-        /* Conteneur pour aligner les cases */
-        .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si nécessaire */
-            gap: 20px; /* Espacement entre les cases */
-            padding: 20px;
-        }
+/* Conteneur pour aligner les cases */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si nécessaire */
+  gap: 20px; /* Espacement entre les cases */
+  padding: 20px;
+}
 
-        /* Style des cases */
-        .box {
-            width: 200px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid black;
-            background-color: white;
-            filter: blur(60%);
-            transition: filter 0.3s ease;
-        }
+/* Style des cases */
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: filter 0.3s ease;
+}
 
-        /* Texte centré et non flou */
-        .box span {
-            filter: none; /* Supprime l'effet blur sur le texte */
-            font-size: 18px;
-            font-weight: bold;
-            color: black;
-        }
+.blur {
+  filter: blur(2px);
+}
 
-        /* Effet au survol */
-        .box:hover {
-            filter: blur(30%); /* Réduit le flou au survol */
-        }
+.border-red {
+  border: red 2px solid;
+}
+
+.border-black {
+  border: black 2px solid;
+}
+
+.new-size {
+  width: 400px;
+  height: 200px;
+}

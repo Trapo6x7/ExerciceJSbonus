@@ -7,4 +7,4 @@ function handleKeyDown(event) {
   if (event.key === key1) {
     document.write("<p> BRAVOGUI </p>");
   }
-}
+};
