@@ -1,30 +1,21 @@
-const button = document.querySelector("#button");
-const textHide = document.querySelector(".box");
-const body = document.querySelector("body");
+const body = document.getElementById("body");
+const button = document.getElementById("button");
+const box = document.getElementById("box");
+const para = document.getElementById("para");
 
-button.addEventListener("click", handleTextInput);
-document.addEventListener("click", handlebackGround);
+button.addEventListener("click", handleButton);
+body.addEventListener("click", handleBody);
 
-function handleTextInput() {
-  if (textHide.classList.contains("none")) {
-    textHide.classList.replace("none", "flex");
-    return;
-  }
-  if (textHide.classList.contains("flex")) {
-    textHide.classList.replace("flex", "none");
-    return;
-  }
+function handleButton(event) {
+  body.style.backgroundColor = "darkgray";
+  box.style.display = "block";
+  box.style.backgroundColor = "white";
+  event.stopPropagation();
 }
 
-function handlebackGround() {
-  if (body.classList.contains("bgwhite")) {
-    body.classList.replace("bgwhite", "bggrey");
-    return;
-  }
-  if (body.classList.contains("bggrey")) {
-    body.classList.replace("bggrey", "bgwhite");
-    return;
+function handleBody(event) {
+  if (event.target != box && event.target != para) {
+    box.style.display = "none";
+    body.style.backgroundColor = "white";
   }
 }
-//document.body.style.backgroundColor = "grey";
-//document.body.style.backgroundColor = "white";
